@@ -1,0 +1,16 @@
+Mon:
+08:30-10:00 Java
+10:10-11:40 History
+Tue:
+08:30-10:00 Statistics
+11:50-13:20 English
+Wed:
+08:30-10:00 Networking
+10:10-11:40 Russian
+15:40-18:50 Python
+Thur:
+08:30-10:00 Robotics
+10:10-11:40 History
+Fri:
+15:40-17:10 Physical Education
+15:40-17:10 Java
