@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.models import AnonymousUser
 from django.shortcuts import render,redirect
 from django.views import View
 from django.views.generic import DetailView, UpdateView, DeleteView
@@ -12,8 +13,12 @@ from store.models import Category
 
 class Home(View):
     def get(self,request):
-        customer = Customer.objects.get(customer=request.user)
-        request.session["customer"] = customer.id
+        if request.user.is_anonymous is not True:
+            print(request.user.is_anonymous)
+            print(request.user)
+            customer = Customer.objects.get(customer=request.user)
+            request.session["customer"] = customer.id
+
         cart = request.session.get('cart')
         categories = Category.getAllCategory()
         products = Product.getAllProduct().order_by('-id')
@@ -51,7 +56,7 @@ class Home(View):
         return redirect('cart')
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(LoginRequiredMixin,DetailView):
     model = Product
     template_name = 'productDetail.html'
     context_object_name = 'product'

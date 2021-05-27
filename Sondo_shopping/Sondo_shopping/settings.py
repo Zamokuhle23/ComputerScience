@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'rest_auth',
     'djcelery_email',
+    'django_celery_results',
     'celery',
     'allauth',
 
@@ -97,20 +98,20 @@ ASGI_APPLICATION = "Sondo_shopping.asgi.application"
 #     }
 # }
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels.layers.InMemoryChannelLayer"
-#     }
-# }
-
 CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            "hosts": [os.environ['REDIS_URL']],
-        },
-    },
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
 }
+
+# CHANNEL_LAYERS = {
+#     'default': {
+#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
+#         'CONFIG': {
+#             "hosts": [('localhost',6379)],
+#         },
+#     },
+# }
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -173,16 +174,18 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MEDIA_URL = '/media/image/'
 MEDIA_ROOT = BASE_DIR
 
-BROKER_URL = os.environ['REDIS_URL']
-CELERY_RESULT_BACKEND = os.environ['REDIS_URL']
+#BROKER_URL = 'amqps://gaseksfj:r52N1lokS5f-eISGcZt_hMEaUt8gEK_f@chimpanzee.rmq.cloudamqp.com/gaseksfj'
+CELERY_RESULT_BACKEND = 'django-cache'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'djsbusiso2021@gmail.com'
 EMAIL_HOST_PASSWORD = 'taqqlnaidwaoqwoj'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Sondo Online team, Do not Reply to this email'
+DEFAULT_FROM_EMAIL = 'djsbusiso2021@gmail.com'
 CELERY_EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
-
+LOGIN_URL = 'login'
 # celery setting.
 CELERY_CACHE_BACKEND = 'default'
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+CELERY_BROKER_URL = 'redis://localhost:6379'

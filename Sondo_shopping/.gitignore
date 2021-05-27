@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-venv/
+
 # Distribution / packaging
 .Python
 env/
@@ -13,6 +13,8 @@ build/
 develop-eggs/
 dist/
 downloads/
+upload/
+images/
 eggs/
 .eggs/
 lib/

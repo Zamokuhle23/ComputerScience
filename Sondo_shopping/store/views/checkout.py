@@ -28,7 +28,7 @@ class Checkout(View):
 					phone=phone,
 				)
 			newOrder.save()
-			print(customer)
+			print(newOrder.id)
 			OrderEmail.delay(order_id=newOrder.id)
 
 		request.session['cart'] = {}
