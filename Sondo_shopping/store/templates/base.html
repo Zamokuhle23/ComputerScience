@@ -24,6 +24,14 @@
                     <a class="nav-link" href="/">Products</a>
                 </li>
             </ul>
+
+                 <form method="get" action="{% url 'search' %}">
+             <input type="text" name="q" placeholder="Search Posts" value="{{ request.GET.q }}">
+
+    <input class="btn btn-primary" type="submit" value="Search"/>
+
+    </form>
+
             <form class="form-inline">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">

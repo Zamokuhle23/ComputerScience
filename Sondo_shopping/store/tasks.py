@@ -44,5 +44,8 @@ def SendAdvert():
         fail_silently=False,
     )
 
+#    celery -A Sondo_shopping beat -l info
+#    celery worker -A app.celery --loglevel=DEBUG --config=settings
+
 
 

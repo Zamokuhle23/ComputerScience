@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import AnonymousUser
+from django.db.models import Q
 from django.shortcuts import render,redirect
 from django.views import View
 from django.views.generic import DetailView, UpdateView, DeleteView
@@ -36,6 +37,21 @@ class Home(View):
             return render(request, 'home.html',{"products":filterProduct,"categories":categories})
 
         return render(request, 'home.html',{"products":products,"categories":categories})
+
+    def get_queryset(self):
+        '''
+        building a dynamic Queryset
+        '''
+        queryset = Product.objects.all().all().order_by('-date_posted')
+        query = self.request.GET.get('q')
+
+        if query:
+            queryset = queryset.filter(
+                Q(author__username__icontains=query) |
+                Q(title__icontains=query) |
+                Q(content__icontains=query)
+            ).distinct()
+        return queryset
 
     def post(self,request):
         product = request.POST.get('product')

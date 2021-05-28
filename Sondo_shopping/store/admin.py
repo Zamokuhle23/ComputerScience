@@ -17,6 +17,8 @@ class AdminCategory(admin.ModelAdmin):
 class AdminCustomer(admin.ModelAdmin):
 	list_display = ['id','phone','email']
 	list_filter = ("id",)
+	ordering = ('-id',)
+	search_fields = ['email']
 
 
 admin.site.register(Product,AdminProduct)
