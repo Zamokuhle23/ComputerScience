@@ -13,6 +13,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
 
 class CommentViewSet(viewsets.ModelViewSet):
     serializer_class = CommentSerializer
+    queryset = Comment.objects.prefetch_related('product_connected')
     def get_queryset(self):
         return Comment.objects.all()
 

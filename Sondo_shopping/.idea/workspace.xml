@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1622177522009" duration="3007000" />
       <workItem from="1622192096126" duration="4291000" />
       <workItem from="1622200643172" duration="3921000" />
-      <workItem from="1622208192321" duration="8820000" />
+      <workItem from="1622208192321" duration="10353000" />
     </task>
     <task id="LOCAL-00001" summary="sondos">
       <created>1622204614309</created>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622232667502</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sondos">
+      <created>1622233122793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622233122793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
