@@ -3,6 +3,7 @@ from rest_framework import routers
 from rest_framework.routers import DefaultRouter
 from rest_framework_swagger.views import get_swagger_view
 from . import views
+from django.urls import path, re_path
 from .views import Home,Signup,logout,Cart,Checkout,OrderView
 from .middlewares import LoginCheckMiddleware
 
@@ -22,6 +23,7 @@ urlpatterns = [
     path('search/', Home.as_view(),name='search'),
     path('signup',Signup.as_view(), name='signup'),
     #path('login',Login.as_view(), name='login'),
+    re_path(r"^home/$", views.Home.as_view(), name="home"),
     path('logout',LoginCheckMiddleware(logout), name='logout'),
     path('cart',LoginCheckMiddleware(Cart.as_view()), name='cart'),
     path('product/<int:pk>/', ProductDetailView.as_view(), name='product-detail'),
