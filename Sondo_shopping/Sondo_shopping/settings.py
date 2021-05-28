@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'customers',
     'store',
+    'users',
     'rest_framework',
     'rest_framework_swagger',
     'channels',

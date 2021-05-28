@@ -13,8 +13,14 @@ class AdminCategory(admin.ModelAdmin):
 
 
 
+@admin.register(Customer)
+class AdminCustomer(admin.ModelAdmin):
+	list_display = ['id','phone','email']
+	list_filter = ("id",)
+
+
 admin.site.register(Product,AdminProduct)
 admin.site.register(Category,AdminCategory)
-admin.site.register(Customer)
+# admin.site.register(Customer)
 admin.site.register(Order)
 admin.site.register(Comment)

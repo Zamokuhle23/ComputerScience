@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers/migrations/0002_alter_customer_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customers/migrations/0003_customer_password.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0002_auto_20210509_1748.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0003_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0004_auto_20210514_1523.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0005_auto_20210514_2312.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0006_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0007_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0008_auto_20210516_1700.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0009_auto_20210516_1742.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0010_auto_20210517_1235.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0011_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0012_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0013_auto_20210517_1850.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0014_auto_20210521_2341.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0015_auto_20210521_2356.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0016_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0017_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0018_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0019_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0020_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0021_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0022_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0023_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/migrations/0024_alter_comment_date_posted.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/book1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/car1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/car2.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/car3.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/food1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/food2.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/images_2.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/products/laptop2.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sondo_shopping/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sondo_shopping/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1t9Nn5LKQvcKvx3r6LFB8IA98u2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\djsbu\Desktop\Computer_Science\Sondo_shopping\store\templates\store" />
+      <recent name="C:\Users\djsbu\Desktop\Computer_Science\Sondo_shopping\store\templates" />
+      <recent name="C:\Users\djsbu\Desktop\Computer_Science\Sondo_shopping\store" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Sondo_shopping" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Sondo_shopping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Sondo_shopping.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="" />
+      <created>1622177518291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622177518291</updated>
+      <workItem from="1622177522009" duration="3007000" />
+      <workItem from="1622192096126" duration="4291000" />
+      <workItem from="1622200643172" duration="3921000" />
+      <workItem from="1622208192321" duration="3138000" />
+    </task>
+    <task id="LOCAL-00001" summary="sondos">
+      <created>1622204614309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622204614309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sondos" />
+    <option name="LAST_COMMIT_MESSAGE" value="sondos" />
+  </component>
+</project>
