@@ -1,7 +1,7 @@
 import datetime
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.urls import reverse
 
 from store.models import Product
 
@@ -17,5 +17,5 @@ class Comment(models.Model):
         return self.text
 
 
-    # def get_absolute_url(self):
-    #     return reverse('post-detail',kwargs={'pk':self.pk})
+    def get_absolute_url(self):
+        return reverse('product-detail',kwargs={'pk':self.product_connected.id})

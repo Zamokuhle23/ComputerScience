@@ -81,7 +81,8 @@
 {#                       </a>#}
 {#                   </div>#}
 
-                            {% if comment.author == user %}
+                            {% if comment.author.username == user.username %}
+
                                 <div class="topright">
 <object align="right">
             <div class="dropdown">
@@ -100,24 +101,8 @@
 </div>
 
 
-
-
         {% endif %}
 
-{##}
-{#             <div#}
-{#                        class="mb-2"#}
-{#                        style="width: 100%; height: 1px; background-color: rgba(255, 255, 255, 0.1)"></div>#}
-{#                <a style="color:black !important;">#}
-{#                    <p>#}
-{#                        {{ comment.content }}#}
-{#                    </p>#}
-{#                </a>#}
-{#                    <small class="white-important d-flex full-width flex-row-reverse" style="color:red" >#}
-{#                        {{ comment.date_posted | date:"H:i l, d.m.y" }}#}
-{#                    </small>#}
-{##}
-{#            </div>#}
 
 </article>
         {% endfor %}
@@ -152,10 +137,11 @@
          + "{{ product.id }}"
          + "/"
      )
+
      commentsSocket.onmessage = function (e){
 
          const data = JSON.parse(e.data)
-         console.log("Masondo");
+
          commentslist = document.getElementById('comments-list')
          commentslist.insertAdjacentHTML(
              'beforeend',
@@ -172,6 +158,8 @@
          e.preventDefault()
          const message = document.querySelector('#id_text');
          const text = message.value
+
+
          console.log("Channels..");
          commentsSocket.send(JSON.stringify({
              'text': text

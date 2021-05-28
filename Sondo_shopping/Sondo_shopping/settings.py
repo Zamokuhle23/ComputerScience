@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+from django.core.checks import templates
+
 LOGIN_REDIRECT_URL = ('/')
 
 # CELERY_BROKER_URL = 'amqp://rabbitmq'
@@ -31,7 +33,7 @@ SECRET_KEY = 'l!t+dmzf97rt9s*yrsux1py_1@odvz1szr&6&m!f@-nxq6k%%p'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -85,18 +87,13 @@ TEMPLATES = [
         },
     },
 ]
-
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+TEMPLATE_DIRS = (
+    os.path.join(SETTINGS_PATH, 'templates'),
+)
 WSGI_APPLICATION = 'Sondo_shopping.wsgi.application'
 ASGI_APPLICATION = "Sondo_shopping.asgi.application"
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels_redis.core.RedisChannelLayer",
-#         "CONFIG": {
-#             "hosts": [('localhost',6379)]
-#         }
-#     }
-# }
 
 CHANNEL_LAYERS = {
     "default": {
@@ -104,17 +101,6 @@ CHANNEL_LAYERS = {
     }
 }
 
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
-#         'CONFIG': {
-#             "hosts": [('localhost',6379)],
-#         },
-#     },
-# }
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -162,8 +148,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 STATIC_FILES = [
@@ -175,7 +159,7 @@ MEDIA_URL = '/media/image/'
 MEDIA_ROOT = BASE_DIR
 
 #BROKER_URL = 'amqps://gaseksfj:r52N1lokS5f-eISGcZt_hMEaUt8gEK_f@chimpanzee.rmq.cloudamqp.com/gaseksfj'
-CELERY_RESULT_BACKEND = 'django-cache'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'djsbusiso2021@gmail.com'

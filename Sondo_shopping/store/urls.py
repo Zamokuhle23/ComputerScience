@@ -1,4 +1,5 @@
 from django.urls import path, include
+from rest_framework import routers
 from rest_framework.routers import DefaultRouter
 from rest_framework_swagger.views import get_swagger_view
 from . import views
@@ -18,6 +19,7 @@ router.register(r"customers",views.CustomerViewSet,"customers")
 urlpatterns = [
     path('',Home.as_view(), name='home'),
     path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls')),
 
     path('signup',Signup.as_view(), name='signup'),
     #path('login',Login.as_view(), name='login'),
