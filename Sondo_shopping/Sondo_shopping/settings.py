@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'customers',
     'store',
     'users',
+    'django_celery_beat',
     'rest_framework',
     'rest_framework_swagger',
     'channels',

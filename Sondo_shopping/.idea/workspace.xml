@@ -2,54 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers/migrations/0002_alter_customer_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customers/migrations/0003_customer_password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0002_auto_20210509_1748.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0003_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0004_auto_20210514_1523.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0005_auto_20210514_2312.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0006_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0007_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0008_auto_20210516_1700.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0009_auto_20210516_1742.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0010_auto_20210517_1235.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0011_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0012_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0013_auto_20210517_1850.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0014_auto_20210521_2341.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0015_auto_20210521_2356.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0016_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0017_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0018_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0019_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0020_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0021_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0022_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0023_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0024_alter_comment_date_posted.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/book1.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/car1.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/car2.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/car3.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/food1.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/food2.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/images_2.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/products/laptop2.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sondo_shopping/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sondo_shopping/celery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sondo_shopping/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sondo_shopping/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.bak" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dat" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dir" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.dir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +86,7 @@
       <workItem from="1622177522009" duration="3007000" />
       <workItem from="1622192096126" duration="4291000" />
       <workItem from="1622200643172" duration="3921000" />
-      <workItem from="1622208192321" duration="3138000" />
+      <workItem from="1622208192321" duration="7123000" />
     </task>
     <task id="LOCAL-00001" summary="sondos">
       <created>1622204614309</created>
@@ -134,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622204614309</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sondos">
+      <created>1622211567696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622211567696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

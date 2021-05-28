@@ -17,6 +17,14 @@ from .views.home import ProductDetailView
 from .views.serializerView import CustomerSerializer
 from customers.models import Customer
 
+from rest_framework.test import RequestsClient
+
+
+class ApiTest(APITestCase):
+    client = RequestsClient()
+    response = client.get('http://localhost:8080/api/customers/')
+    assert response.status_code == 200
+
 
 class RegistrationTestCase(APITestCase):
 
@@ -43,7 +51,7 @@ class RegistrationTestCase(APITestCase):
 #     def test_customer_list_authenticated(self):
 #         response = self.client.get(self.list_url)
 #         self.assertEqual(response.status_code,status.HTTP_200_OK)
-#
+
 #     def test_customer_list_unauthenticated(self):
 #         self.client.force_authenticate(user=None)
 #         response = self.client.get(self.list_url)
@@ -79,6 +87,7 @@ class TestCustomer(unittest.TestCase):
         self.assertNotEqual(self.customer1.customer.email.find('@'), -1)
         self.assertNotEqual(self.customer1.customer.email.find('.'), -1)
 
+
 class TestForms(unittest.TestCase):
 
     def test_UserRegisterForm(self):
@@ -94,6 +103,7 @@ class TestForms(unittest.TestCase):
         form = UserRegisterForm(data={})
 
         self.assertFalse(form.is_valid())
+
     def test_unique_UserRegisterForm(self):
         form = UserRegisterForm(data={
             'username': 'djsbu',
@@ -102,4 +112,3 @@ class TestForms(unittest.TestCase):
             'password2': 'Mokuhle@2021'
         })
         self.assertFalse(form.errors)
-
