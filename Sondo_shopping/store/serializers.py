@@ -23,7 +23,7 @@ class CommentSerializer(serializers.ModelSerializer):
     product_connected = ProductSerializer(many=False)
     class Meta:
         model = Comment
-        fields  = ["id","author","date_posted","product_connected","content"]
+        fields  = ["id","author","date_posted","product_connected","text"]
 
 class EagerLoadingMixin:
     @classmethod

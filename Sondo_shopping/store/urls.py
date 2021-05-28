@@ -11,15 +11,26 @@ from .views.home import CommentUpdateView, CommentDeleteView, ProductDetailView
 
 schema_views = get_swagger_view(title='Online Shopping API')
 router = DefaultRouter()
-router.register(r"categories",views.CategoryViewSet,"categories")
-router.register(r"comments",views.CommentViewSet,"comments")
-router.register(r"orders",views.OrderViewSet,"orders")
-router.register(r"products",views.ProductViewSet,"products")
+router1 = DefaultRouter()
+router2 = DefaultRouter()
+router3 = DefaultRouter()
+router4 = DefaultRouter()
+
+router1.register(r"categories",views.CategoryViewSet,"categories")
+router2.register(r"comments",views.CommentViewSet,"comments")
+router3.register(r"orders",views.OrderViewSet,"orders")
+router4.register(r"products",views.ProductViewSet,"products")
 router.register(r"customers",views.CustomerViewSet,"customers")
 
 urlpatterns = [
     path('',Home.as_view(), name='home'),
-    path('api/', include(router.urls)),
+    path('customers/', include(router.urls)),
+    path('categories/', include(router1.urls)),
+    path('comments/', include(router2.urls)),
+    path('orders/', include(router3.urls)),
+    path('products/', include(router4.urls)),
+
+    path('api/',schema_views),
     path('search/', Home.as_view(),name='search'),
     path('signup',Signup.as_view(), name='signup'),
     #path('login',Login.as_view(), name='login'),
