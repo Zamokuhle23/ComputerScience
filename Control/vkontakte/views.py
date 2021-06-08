@@ -1,53 +1,28 @@
-from django.shortcuts import render, get_object_or_404
-from django.views.generic import (ListView,
-                                  DetailView,
-                                  CreateView,
-                                  UpdateView,
-                                  DeleteView
-                                  )
+from rest_framework import viewsets
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
-
-# Create your views here.
-from vkontakte.models import Post
-
-
-class PostListView(ListView):
-    model = Post
-    template_name = 'vkontakte/home.html'
-    context_object_name = 'posts'
-
-    ordering = ['date_created']
-
-class PostDeleteView(DeleteView):
-    model = Post
-    success_url = '/home'
-
-
-class PostCreateView(CreateView):
-    model = Post
-    fields = ['title','body']
-
-def like(request, postid, Likes):
-    like = Likes()
-    obj = ''
-    valueobj = ''
-
-    if request.method == "POST":
-        post = get_object_or_404(Post, id=postid)
-        liker = request.user
-        obj = Likes.objects.get(user=request.user, post=post)
-        valueobj = obj.value
-        valueobj = int(valueobj)
-        if obj.user != liker:
-
-            like.user = liker
-
-            like.post = post
-
-            post.num_likes += 1
-        else:
-            post.num_likes -= 1
+from vkontakte.models import Post, User, Likes
+from vkontakte.serializers import PostSerializer, UserSerializer, LikesSerializer
 
 
 
+class PostViewSet(viewsets.ModelViewSet):
+    serializer_class = PostSerializer
 
+    def get_queryset(self):
+        return Post.objects.all()
+    def get_likes(self,request,id):
+        post = Post.objects.get(id=id)
+        return Response({'Likes':post.likes.num_likes})
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    serializer_class = UserSerializer
+    def get_queryset(self):
+        return User.objects.all()
+
+class LikesViewSet(viewsets.ModelViewSet):
+    serializer_class = LikesSerializer
+    def get_queryset(self):
+        return Likes.objects.all()
