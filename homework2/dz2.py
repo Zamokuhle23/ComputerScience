@@ -26,6 +26,6 @@ def check(func,num):
         results = func(num)
         return results
     else:
-        return -1
+        return "Not Integer"
 
 print(check(factorial,3))
