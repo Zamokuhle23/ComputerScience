@@ -4,9 +4,10 @@
     <list default="true" id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sondo_shopping/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sondo_shopping/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.bak" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dat" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dir" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.dir" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,11 @@
       <workItem from="1622177522009" duration="3007000" />
       <workItem from="1622192096126" duration="4291000" />
       <workItem from="1622200643172" duration="3921000" />
-      <workItem from="1622208192321" duration="12789000" />
+      <workItem from="1622208192321" duration="13525000" />
+      <workItem from="1622452970964" duration="2118000" />
+      <workItem from="1622551931728" duration="1375000" />
+      <workItem from="1622708743813" duration="256000" />
+      <workItem from="1623184825020" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="sondos">
       <created>1622204614309</created>
@@ -147,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622235578139</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="sondos">
+      <created>1622237017757</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622237017757</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
