@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+{% if posts %}
+{% for post in posts %}
+<div class="media-body">
+    <div class="article-metadata">
+    <h2>{{ post.title }}</h2>
+        {{ post.body }}<br>
+        {{ post.num_likes }} Likes
+    </div>
+</div>
+
+{% endfor %}
+{% else %}
+<h1>No Posts Yet</h1>
+{% endif %}
+</body>
+</html>
