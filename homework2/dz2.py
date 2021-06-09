@@ -1,7 +1,7 @@
 import random
 import string
 
-rd = random.random()
+
 def get_letter():
     list = string.ascii_letters
     fin = ''
@@ -20,7 +20,7 @@ def factorial(n):
     for i in range(1,n+1):
         result = result*i
     return result
-
+ 
 def check(func,num):
     if num > 0 and isinstance(num, int):
         results = func(num)
