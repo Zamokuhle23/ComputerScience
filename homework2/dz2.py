@@ -12,8 +12,8 @@ def get_letter():
 
 
 
-# for i in get_letter():
-#     print(i, end=" ")
+ for i in get_letter():
+     print(i, end=" ")
 
 def factorial(n):
     result = 1
