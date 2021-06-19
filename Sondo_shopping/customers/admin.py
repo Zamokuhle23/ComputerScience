@@ -1,7 +1,4 @@
 from django.contrib import admin
-
-from customers.models import Customer
-from store.models import Product, Comment
 from users.models import Seller, Producer, DeliverMan, Shipper
 
 

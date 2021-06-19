@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.views import View
 from store.models import Customer
 from store.models import Order

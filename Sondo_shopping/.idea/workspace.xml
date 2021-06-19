@@ -1,50 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="">
+    <list default="true" id="cc9ee854-5cc8-4149-8380-95fd17556afc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Computer_Science.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sondo_shopping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sondo_shopping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sondo_shopping/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sondo_shopping/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.bak" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dat" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dir" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule.dir" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sondo_shopping/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sondo_shopping/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/migrations/0002_alter_customer_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/migrations/0003_customer_password.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/consumers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0002_auto_20210509_1748.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0003_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0004_auto_20210514_1523.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0005_auto_20210514_2312.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0006_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0007_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0008_auto_20210516_1700.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0009_auto_20210516_1742.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0010_auto_20210517_1235.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0011_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0012_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0013_auto_20210517_1850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0014_auto_20210521_2341.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0015_auto_20210521_2356.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0016_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0017_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0018_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0019_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0020_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0021_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0022_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0023_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0024_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0025_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0026_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/0027_alter_comment_date_posted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models/Comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models/Comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views/signup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework1(переписание)/homeworkapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../homework1(переписание)/homeworkapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework1(переписание)/templates/homeworkapp/company_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../homework1(переписание)/templates/homeworkapp/company_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1t9Nn5LKQvcKvx3r6LFB8IA98u2" />
+  <component name="ProjectId" id="1uAQFxQtdz1kqrNdbD8vevbB5cd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\djsbu\Desktop\Computer_Science\Sondo_shopping\store\templates\store" />
-      <recent name="C:\Users\djsbu\Desktop\Computer_Science\Sondo_shopping\store\templates" />
-      <recent name="C:\Users\djsbu\Desktop\Computer_Science\Sondo_shopping\store" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="Sondo_shopping" type="Python.DjangoServer" factoryName="Django server">
@@ -75,98 +124,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20cb0df0-8357-497e-8e2f-f2f9e037a67a" name="Default Changelist" comment="" />
-      <created>1622177518291</created>
+      <changelist id="cc9ee854-5cc8-4149-8380-95fd17556afc" name="Default Changelist" comment="" />
+      <created>1624105819610</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622177518291</updated>
-      <workItem from="1622177522009" duration="3007000" />
-      <workItem from="1622192096126" duration="4291000" />
-      <workItem from="1622200643172" duration="3921000" />
-      <workItem from="1622208192321" duration="13525000" />
-      <workItem from="1622452970964" duration="2118000" />
-      <workItem from="1622551931728" duration="1375000" />
-      <workItem from="1622708743813" duration="256000" />
-      <workItem from="1623184825020" duration="75000" />
+      <updated>1624105819610</updated>
+      <workItem from="1624105821182" duration="90000" />
+      <workItem from="1624105939661" duration="3773000" />
     </task>
-    <task id="LOCAL-00001" summary="sondos">
-      <created>1622204614309</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1622204614309</updated>
-    </task>
-    <task id="LOCAL-00002" summary="sondos">
-      <created>1622211567696</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1622211567696</updated>
-    </task>
-    <task id="LOCAL-00003" summary="sondos">
-      <created>1622231212760</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1622231212760</updated>
-    </task>
-    <task id="LOCAL-00004" summary="sondos">
-      <created>1622231236340</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1622231236340</updated>
-    </task>
-    <task id="LOCAL-00005" summary="sondos">
-      <created>1622232667502</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1622232667502</updated>
-    </task>
-    <task id="LOCAL-00006" summary="sondos">
-      <created>1622233122793</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622233122793</updated>
-    </task>
-    <task id="LOCAL-00007" summary="sondos">
-      <created>1622234528559</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622234528559</updated>
-    </task>
-    <task id="LOCAL-00008" summary="sondos">
-      <created>1622235126232</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1622235126232</updated>
-    </task>
-    <task id="LOCAL-00009" summary="sondos">
-      <created>1622235578139</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1622235578139</updated>
-    </task>
-    <task id="LOCAL-00010" summary="sondos">
-      <created>1622237017757</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1622237017757</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="sondos" />
-    <option name="LAST_COMMIT_MESSAGE" value="sondos" />
   </component>
 </project>

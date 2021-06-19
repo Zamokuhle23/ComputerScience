@@ -1,16 +1,27 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.contrib.auth.models import User
 
 
-# class User(AbstractUser):
-#     CUSTOMER = 1
-#     SELLER = 2
-#
-#     ROLE_CHOICES = (
-#         (CUSTOMER, 'Customer'),
-#         (SELLER, 'Seller'),
-#     )
-#     role = models.PositiveSmallIntegerField(choices=ROLE_CHOICES, blank=True, null=True)
+
+class User(AbstractUser):
+    is_customer = models.BooleanField(default=False)
+    is_seller = models.BooleanField(default=False)
+    is_producer = models.BooleanField(default=False)
+    is_deliverman = models.BooleanField(default=False)
+
+    class Meta:
+        db_table = 'auth_user'
+    # class Meta(AbstractUser.Meta):
+    #     swappable = 'AUTH_USER_MODEL'
+
+    @staticmethod
+    def emailExits(userEmail):
+        try:
+            user = User.objects.get(email=userEmail)
+            return user.email
+        except:
+            return False
+
 
 class Seller(models.Model):
     seller = models.OneToOneField(User,on_delete=models.CASCADE)

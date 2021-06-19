@@ -10,7 +10,7 @@
         <ul>
 	{% for object in object_list %}
 	<li>Name of Company: {{ object.company_name }}</li>
-        <li>CEO: {{ object.ceo.employee.first_name }}</li><a class="article-title" href="{% url 'employee-edit' object.ceo.employee.id %}"> Edit Employee</a><a class="article-title" href="{% url 'employee-delete' object.ceo.employee.id %}">       Delete CEO</a>
+        <li>CEO: {{ object.ceo.employee.first_name }}</li><a class="article-title" href="{% url 'employee-edit' object.id %}"> Edit Employee</a><a class="article-title" href="{% url 'employee-delete' object.id %}">       Delete CEO</a>
         <li>Company Description: {{ object.Company_description }}</li>
 
 	<hr/>

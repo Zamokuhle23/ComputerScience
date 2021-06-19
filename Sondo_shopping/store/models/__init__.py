@@ -1,3 +1,4 @@
+from users.models import User
 from .product import Product
 from .Comment import Comment
 from .category import Category

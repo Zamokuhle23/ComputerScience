@@ -12,13 +12,19 @@ class Show(ListView):
     model = Company
 
 class Edit(UpdateView):
-    model = Employee
+    model = Company
+
     fields = ['department','first_name','last_name','job_description','age']
+
     def form_valid(self, form):
         return self.form_valid(form)
 
+    def get_queryset(self):
+        queryset = self.get_queryset()
+
+
 class delete(DeleteView):
-    model = Employee
+    model = Company
 
 
 class CreateEmployee(CreateView):

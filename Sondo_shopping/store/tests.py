@@ -3,7 +3,7 @@ import unittest
 from django.contrib.auth.views import PasswordResetDoneView, PasswordResetCompleteView
 from django.test import TestCase, SimpleTestCase
 import json
-from django.contrib.auth.models import User
+from users.models import User
 from django.urls import reverse, resolve
 from rest_framework import status
 # from rest_framework.authtoken.models import Token

@@ -36,11 +36,17 @@
                     <small style="color:red"> {{ error.emailExits_error }} </small>
                     {% endif %}
                 </div>
+
                 <div class="form-group">
-                    <label for="phone">Phone number</label>
-                    <input value="{{ userData.phone }}" name="phone" type="number" class="form-control" id="phone" placeholder="Enter Phone Number">
+                    <label for="role">Register As</label>
+                    <select name="role" class="form-control" id="exampleFormControlSelect1">
+                        <option value="None">Choose...</option>
+                        <option value="Customer">Customer</option>
+                        <option value="Seller">Seller</option>
+                        <option value="Deliver">Deliver</option>
+                    </select>
                     {% if error %}
-                    <small style="color:red"> {{ error.phoneNumber_error }} </small>
+                    <small style="color:red"> {{ error.role_error }} </small>
                     {% endif %}
                 </div>
                 <div class="form-group">

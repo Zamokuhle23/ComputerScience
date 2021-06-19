@@ -1,5 +1,4 @@
 from django.urls import path, include
-from rest_framework import routers
 from rest_framework.routers import DefaultRouter
 from rest_framework_swagger.views import get_swagger_view
 from . import views

@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from django.contrib.auth.hashers import make_password
 from store.models import Customer
-from django.contrib.auth.models import User
+from users.models import User
 
 class Signup(View):
 	def get(self,request):
@@ -10,13 +9,14 @@ class Signup(View):
 			
 	def post(self,request):
 		userData = request.POST
+		print(userData["role"])
 		# validate
 		error = self.validateData(userData)
 		if error :
 
 			return render(request, 'registration/signup.html', {"error":error, "userData":userData})
 		else:
-			if Customer.emailExits(userData['email']):
+			if User.emailExits(userData['email']):
 				error["emailExits_error"] = "Email Already Exits"
 				return render(request, 'registration/signup.html', {"error":error, "userData":userData})
 			else:
@@ -43,8 +43,8 @@ class Signup(View):
 			error['minPass_error'] = "Password must be 8 char"
 		elif len(userData['name']) > 25 or len(userData['username']) < 3 :
 			error["name_error"] = "Name must be 3-25 charecter"
-		elif len(userData['phone']) != 11:
-			error["phoneNumber_error"] = "Phone number must be 11 charecter."
+		elif userData['role'] == 'None' :
+			error["role_error"] = "select type of registration"
 		elif userData['password'] != userData['confirm_password']:
 			error["notMatch_error"] = "Password doesn't match"	
 

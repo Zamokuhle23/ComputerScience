@@ -1,9 +1,7 @@
 import json
-from django.contrib.auth.models import User
+from users.models import User
 from channels.db import database_sync_to_async
 from channels.generic.websocket import AsyncWebsocketConsumer
-
-from customers.models import Customer
 from store.models import Product, Comment
 
 
