@@ -67,20 +67,6 @@
            <p>{{ comment.text }}</p>
        </div>
 
-{#                <div style="width: 100%; word-break: break-all;" class="hovered-tweet-comment-in">#}
-{#                <div class="pb-2 row m-0" style="width: 100%; margin-right: 2px !important;">#}
-{#                   <div#}
-{#                           style="padding-left: 0px !important;"#}
-{#                           class="col-8 no-padding d-flex align-items-center">#}
-{#                       <img#}
-{#                           class="rounded-circle mr-2"#}
-{#                           style="width: 35px; height: 35px;"#}
-{#                           src="{{ comment.author.image.url }}">#}
-{#                       <a>#}
-{#                           {{ comment.author }}#}
-{#                       </a>#}
-{#                   </div>#}
-
                             {% if comment.author.username == user.username %}
 
                                 <div class="topright">

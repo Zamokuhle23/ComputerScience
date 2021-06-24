@@ -24,6 +24,12 @@
                     <a class="nav-link" href="/">Products</a>
                 </li>
             </ul>
+        {% if True %}
+            {{ user.is_seller }}
+            <li class="nav-item">
+                <a class="nav-link" href="#">Add a Product</a>
+            </li>
+        {% endif %}
 
                  <form method="get" action="{% url 'search' %}">
              <input type="text" name="q" placeholder="Search Posts" value="{{ request.GET.q }}">
@@ -45,9 +51,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
                     </li>
                     {% else %}
                     <li class="nav-item">

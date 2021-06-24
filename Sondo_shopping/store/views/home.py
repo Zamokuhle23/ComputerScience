@@ -7,17 +7,22 @@ from customers.models import Customer
 from store.forms import NewCommentForm
 from store.models import Product, Comment
 from store.models import Category
-
-
+from users.models import Seller
 
 
 class Home(View):
     def get(self,request):
         if request.user.is_anonymous is not True:
-            print(request.user.is_anonymous)
+            print(request.user.is_seller)
             print(request.user)
-            customer = Customer.objects.get(customer=request.user)
-            request.session["customer"] = customer.id
+            if request.user.is_seller:
+                seller = Seller.objects.get(seller=request.user)
+                request.session["customer"] = seller.id
+            elif request.user.is_customer:
+                customer = Customer.objects.get(customer=request.user)
+                request.session["customer"] = customer.id
+
+
 
         cart = request.session.get('cart')
         categories = Category.getAllCategory()

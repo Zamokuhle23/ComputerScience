@@ -34,13 +34,5 @@ class Customer(models.Model):
         except:
             return False
 
-@receiver(post_save, sender=User)
-def create_customer(sender, instance, created, **kwargs):
-    if created:
-        Customer.objects.create(customer=instance)
 
-
-@receiver(post_save,sender=User)
-def save_customer(sender,instance,created,**kwargs):
-    instance.customer.save()
 
